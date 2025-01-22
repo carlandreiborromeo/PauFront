@@ -1,0 +1,117 @@
+/* VotingSystem.css */
+
+body {
+  font-family: 'Roboto Mono', monospace; /* A coding-style font */
+  background: #1e1e2f; /* Dark, IDE-like background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.container {
+  background: #282a36; /* Dark background similar to popular IDEs */
+  color: #f8f8f2; /* Light text color */
+  max-width: 450px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 80%);
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 2.4rem; /* Bigger heading */
+  color: #50fa7b; /* Neon green */
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #8be9fd; /* Light neon blue */
+}
+
+form {
+  margin-top: 15px;
+}
+
+label {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.2rem; /* Bigger label text */
+  color: #f8f8f2;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 2px solid #6272a4; /* Muted purple border */
+  border-radius: 5px;
+  font-size: 1.1rem; /* Bigger input text */
+  background: #44475a; /* Dark input background */
+  color: #f8f8f2;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #50fa7b; /* Highlight border when focused */
+  box-shadow: 0 0 10px #50fa7b; /* Neon glow */
+  outline: none;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #ff79c6; /* Neon pink for radio buttons */
+  transform: scale(1.2); /* Larger radio buttons */
+}
+
+button {
+  background: #ff5555; /* Vibrant red button */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 1.2rem; /* Bigger button text */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: #ff6e6e; /* Lighter red on hover */
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 85, 85, 0.8); /* Neon glow */
+}
+
+.thank-you {
+  color: #50fa7b; /* Neon green */
+  font-size: 1.4rem; /* Larger thank-you text */
+  margin-top: 15px;
+}
+
+label:hover {
+  color: #50fa7b; /* Neon green hover for labels */
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.2rem; /* Bigger paragraph text */
+  margin: 10px 0;
+  color: #f1fa8c; /* Neon yellow for emphasis */
+}
